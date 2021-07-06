@@ -42,7 +42,7 @@ class Slider {
     moveToNextSlide() {
         if (this.index <= this.slidesLength() - 1) {
             this.index += this.slidesPerContainer();
-            if (this.index >= this.slidesLength() - 1) {
+            if (this.index > this.slidesLength() - 1) {
                 this.index = 0
             }
         } else {
